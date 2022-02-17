@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="DR" constructor="ShieldsBadge" version="0.0.1" display-name-key="ShieldsBadge" description-key="ShieldsBadge description" control-type="standard" >
+    
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="label" display-name-key="Label" description-key="Label of the badge" of-type-group="inputtypes" usage="bound" required="true" />
+    <property name="message" display-name-key="Message" description-key="Message of the badge" of-type-group="inputtypes" usage="bound" required="true" />
+    <type-group name="inputtypes">
+        <type>SingleLine.Text</type>
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+        <type>Lookup.Simple</type>
+    </type-group>
+    <property name="labelcolor" display-name-key="Label Color" description-key="Color of the Label" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="color" display-name-key="Color" description-key="Color of the Message" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="style" display-name-key="Style" description-key="Style of the Badge" of-type="Enum" usage="input" required="true">
+      <value name="plastic" display-name-key="plastic" description-key="plastic" default="true">plastic</value>
+      <value name="flat" display-name-key="flat" description-key="flat">flat</value>
+      <value name="flat-square" display-name-key="flat-square" description-key="flat-square">flat-square</value>
+      <value name="for-the-badge" display-name-key="for-the-badge" description-key="for-the-badge">for-the-badge</value>
+      <value name="social" display-name-key="social" description-key="social">social</value>
+    </property>
+    <property name="logo" display-name-key="Logo" description-key="(Optional) Logo" of-type="SingleLine.Text" usage="bound"/>
+    <property name="logocolor" display-name-key="Logo Color" description-key="(Optional) Logo Color" of-type="SingleLine.Text" usage="bound"/>
+    
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/ShieldsBadge.css" order="1" />
+      <resx path="strings/ShieldsBadge.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+
+  </control>
+</manifest>
