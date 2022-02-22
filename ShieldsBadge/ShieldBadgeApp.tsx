@@ -24,6 +24,8 @@ const ShieldBadgeApp = (context:ComponentFramework.Context<IInputs>): JSX.Elemen
           case 'Lookup.Simple':
           case 'OptionSet':
           case 'TwoOptions':
+            label = context.parameters.customlabel.formatted ?? ''
+            break
           default:
             label = context.parameters.customlabel.raw
             break
