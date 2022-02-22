@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="DR" constructor="ShieldsBadge" version="0.0.6" display-name-key="ShieldsBadge" description-key="ShieldsBadge description" control-type="standard" >
+  <control namespace="DR" constructor="ShieldsBadge" version="0.0.7" display-name-key="ShieldsBadge" description-key="ShieldsBadge description" control-type="standard" >
     
     <external-service-usage enabled="false">
     </external-service-usage>
