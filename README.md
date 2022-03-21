@@ -1,5 +1,5 @@
-# Shields.Badge.PCF
- PowerApps Component framework (PCF) Control to render shields.io badges
+# Shields.Badge.PCF ![GitHub all releases](https://img.shields.io/github/downloads/drivardxrm/ShieldsIO.Badge.PCF/total?style=plastic)
+ PowerApps Component framework (PCF) Control to render [shields.io](https://shields.io/) badges
  
  
  
@@ -7,11 +7,8 @@
 
 #### Features:
 
-
-
-
-
-# Dependencies
+- Can be bound to most of the available fields type (see list below)
+- Works in Model-driven apps, Canvas apps, PowerApps portals
 
 
 # Parameters
