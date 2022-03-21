@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="DR" constructor="ShieldsBadge" version="0.0.7" display-name-key="ShieldsBadge" description-key="ShieldsBadge description" control-type="standard" >
+  <control namespace="DR" constructor="ShieldsBadge" version="0.0.21" display-name-key="ShieldsIO Badge" description-key="Generates awesome shieldsio badges from Dataverse data. ref https://shields.io/" control-type="standard" preview-image="img/shieldsbadgepreview.png">
     
     <external-service-usage enabled="false">
     </external-service-usage>
@@ -10,7 +10,7 @@
       <value name="false" display-name-key="false" description-key="False" default="true">false</value>
       <value name="true" display-name-key="true" description-key="True">true</value>     
     </property>
-    <property name="customlabel" display-name-key="Custom Label" description-key="(Optional) Custom label. Can be any free text or the value of another supported field." of-type-group="inputtypes" usage="input"/>
+    <property name="customlabel" display-name-key="Custom Label" description-key="(Optional) Custom label text" of-type="SingleLine.Text" usage="input"/>
     
     
     <property name="color" display-name-key="Color" description-key="(Optional) Color of the Message" of-type="SingleLine.Text" usage="input"/>
@@ -22,8 +22,9 @@
       <value name="for-the-badge" display-name-key="for-the-badge" description-key="for-the-badge">for-the-badge</value>
       <value name="social" display-name-key="social" description-key="social">social</value>
     </property>
-    <property name="logo" display-name-key="Logo" description-key="(Optional) Logo" of-type="SingleLine.Text" usage="input"/>
+    <property name="logo" display-name-key="Logo" description-key="(Optional) Logo. see https://simpleicons.org/ for available logos" of-type="SingleLine.Text" usage="input"/>
     <property name="logocolor" display-name-key="Logo Color" description-key="(Optional) Logo Color" of-type="SingleLine.Text" usage="input"/>
+    <property name="url" display-name-key="Redirect URL" description-key="(Optional) Redirect to this URL on click of the badge" of-type-group="urltypes" usage="input"/>
     
     <type-group name="inputtypes">
         <type>SingleLine.Text</type>
@@ -31,6 +32,7 @@
         <type>SingleLine.Phone</type>
         <type>SingleLine.Ticker</type>
         <type>SingleLine.URL</type>
+        <type>SingleLine.TextArea</type>
         <type>Whole.None</type>
         <type>Currency</type>
         <type>FP</type>
@@ -40,6 +42,15 @@
         <type>DateAndTime.DateOnly</type>
         <type>OptionSet</type>
         <type>TwoOptions</type>
+        <type>Enum</type>
+        <type>Multiple</type>
+        <type>MultiSelectOptionSet</type>
+    </type-group>
+
+    <type-group name="urltypes">
+        <type>SingleLine.Text</type>
+        <type>SingleLine.URL</type>
+        <type>SingleLine.TextArea</type>
     </type-group>
     
     <resources>

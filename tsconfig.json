@@ -3,6 +3,11 @@
     "compilerOptions": {
         "typeRoots": ["node_modules/@types"],
         "sourceMap": true,
-        "jsx": "react"
+        "jsx": "react",
+        "lib": [
+            // ... other libs
+            "DOM",
+            "ES2021.String"
+        ]
     }
 }
