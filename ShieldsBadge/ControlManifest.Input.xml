@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="DR" constructor="ShieldsBadge" version="0.0.21" display-name-key="ShieldsIO Badge" description-key="Generates awesome shieldsio badges from Dataverse data. ref https://shields.io/" control-type="standard" preview-image="img/shieldsbadgepreview.png">
+  <control namespace="DR" constructor="ShieldsBadge" version="0.0.23" display-name-key="ShieldsIO Badge" description-key="Generates awesome shieldsio badges from Dataverse data. ref https://shields.io/" control-type="standard" preview-image="img/shieldsbadgepreview.png">
     
     <external-service-usage enabled="false">
     </external-service-usage>
@@ -10,11 +10,11 @@
       <value name="false" display-name-key="false" description-key="False" default="true">false</value>
       <value name="true" display-name-key="true" description-key="True">true</value>     
     </property>
-    <property name="customlabel" display-name-key="Custom Label" description-key="(Optional) Custom label text" of-type="SingleLine.Text" usage="input"/>
+    <property name="customlabel" display-name-key="Custom Label" description-key="(Optional) Custom label text, if blank the display name of the field will be shown" of-type="SingleLine.Text" usage="input"/>
     
     
     <property name="color" display-name-key="Color" description-key="(Optional) Color of the Message" of-type="SingleLine.Text" usage="input"/>
-    <property name="labelcolor" display-name-key="Label Color" description-key="Color of the Label" of-type="SingleLine.Text" usage="input"/>
+    <property name="labelcolor" display-name-key="Label Color" description-key="(Optional) Color of the Label" of-type="SingleLine.Text" usage="input"/>
     <property name="style" display-name-key="Style" description-key="Style of the Badge" of-type="Enum" usage="input" required="true" usage="input">
       <value name="plastic" display-name-key="plastic" description-key="plastic" default="true">plastic</value>
       <value name="flat" display-name-key="flat" description-key="flat">flat</value>
