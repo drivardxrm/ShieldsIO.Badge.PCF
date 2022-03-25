@@ -1,4 +1,4 @@
-# Shields.Badge.PCF ![GitHub all releases](https://img.shields.io/github/downloads/drivardxrm/ShieldsIO.Badge.PCF/total?style=plastic)
+# ShieldsIO.Badge.PCF ![GitHub all releases](https://img.shields.io/github/downloads/drivardxrm/ShieldsIO.Badge.PCF/total?style=plastic)
  PowerApps Component framework (PCF) Control to render awesome [shields.io](https://shields.io/) badges in Dataverse Model-driven forms and Canvas Apps
  
  ![PowerApps + shieldsio](https://img.shields.io/badge/PowerApps_%E2%99%A5%EF%B8%8F-Shields.io-404040?style=plastic&labelColor=742774&logo=powerapps&logoColor=null)
