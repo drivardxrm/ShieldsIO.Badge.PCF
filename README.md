@@ -20,11 +20,11 @@
 | message  | Main Message of the badge, can be bound to any available field type (see available input types below) |             |
 | showLabel  | Show label on the left side of the badge |   false          |
 | customlabel   |  (Optional) Custom label text, if blank the display name of the field will be shown   | |
-| color   | 🎨(Optional) Color of the Message, see https://shields.io/ for available colors|  |
-| labelcolor | 🎨(Optional) Color of the Message, see https://shields.io/ for available colors |     |
+| color   | 🎨(Optional) Color of the Message : hex, rgb, rgba, hsl, hsla and css named colors supported|  |
+| labelcolor | 🎨(Optional) Color of the Message : hex, rgb, rgba, hsl, hsla and css named colors supported |     |
 | style | Style of the Badge, see https://shields.io/ for available styles |     |
 | logo | (Optional) Logo. see https://simpleicons.org/ for available logos |     |
-| logocolor | 🎨(Optional) Logo Color. see https://shields.io/ for available colors |     |
+| logocolor | 🎨(Optional) Logo Color : hex, rgb, rgba, hsl, hsla and css named colors supported |     |
 | url | (Optional) Redirect to this URL on click of the badge |     |
 
 
