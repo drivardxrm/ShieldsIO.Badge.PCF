@@ -9,7 +9,7 @@
 
 #### Features:
 
-- **Generic** : Can be bound to most of the available ![Dataverse](https://img.shields.io/badge/-Dataverse-brightgreen?style=plastic&labelColor=null&logo=powerapps&logoColor=white) fields types (see available input types)
+- **Generic** : Can be bound to most of the available Dataverse fields types (see available input types)
 - **Portable** : Works in Model-driven apps, Canvas apps, PowerApps portals
 - Provide a redirect URL to turn your badge clickable
 
@@ -17,17 +17,17 @@
 # Parameters
 | Parameter         | Description                                                                                  | Default     |
 |-------------------|----------------------------------------------------------------------------------------------|----------   |
-| message  | Main Message of the badge, can be bound to any available field type (see available input types below) |             |
-| showLabel  | Show label on the left side of the badge |   false          |
-| customlabel   |  (Optional) Custom label text, if blank the display name of the field will be shown   | |
-| color   | 🎨(Optional) Color of the Message : hex, rgb, rgba, hsl, hsla and css named colors supported|  |
-| labelcolor | 🎨(Optional) Color of the Message : hex, rgb, rgba, hsl, hsla and css named colors supported |     |
-| style | Style of the Badge, see https://shields.io/ for available styles |     |
-| logo | (Optional) Logo. see https://simpleicons.org/ for available logos |     |
-| logocolor | 🎨(Optional) Logo Color : hex, rgb, rgba, hsl, hsla and css named colors supported |     |
-| url | (Optional) Redirect to this URL on click of the badge |     |
+| Message  | Main Message of the badge, can be bound to any available field type (see available input types below) |             |
+| Show Label  | Show label on the left side of the badge |   false          |
+| Custom Label   |  (Optional) Custom label text, if blank the display name of the field will be shown   | |
+| Color   | (Optional) Color of the Message 🎨|  |
+| Label Color |(Optional) Color of the Label 🎨 |     |
+| Style | Style of the Badge (plastic, flat, flat-square, for-the-badge, social) |  plastic   |
+| Logo | (Optional) Logo. see https://simpleicons.org/ for available logos |     |
+| Logo Color | (Optional) Color of the Logo 🎨 |     |
+| Url | (Optional) Redirect to this URL on click of the badge |     |
 
-
+🎨 For color parmeters :  hex, rgb, rgba, hsl, hsla and css named colors supported
 
 ## Available Input types ##
 SingleLine.Text  
