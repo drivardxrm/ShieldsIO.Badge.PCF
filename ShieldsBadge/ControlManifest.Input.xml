@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="DR" constructor="ShieldsBadge" version="0.0.24" display-name-key="ShieldsIO Badge" description-key="Generates awesome shieldsio badges from Dataverse data. ref https://shields.io/" control-type="standard" preview-image="img/shieldsbadgepreview.png">
+  <control namespace="DR" constructor="ShieldsBadge" version="0.0.28" display-name-key="ShieldsIO Badge" description-key="Generates awesome shieldsio badges from Dataverse data. ref https://shields.io/" control-type="standard" preview-image="img/shieldsbadgepreview.png">
     
     <external-service-usage enabled="false">
     </external-service-usage>

@@ -23,7 +23,7 @@ const ShieldBadgeApp = (context:ComponentFramework.Context<IInputs>): JSX.Elemen
         label = context.parameters.message.attributes?.DisplayName ?? ''
       }
     }
-    return (label ?? '').replaceAll('-', '--').replaceAll('_', '__').replaceAll(' ', '_')
+    return encodeURIComponent(label ?? '').replaceAll('-', '--').replaceAll('_', '__').replaceAll(' ', '_')
   }
 
   const getMessage = ():string => {
@@ -31,7 +31,7 @@ const ShieldBadgeApp = (context:ComponentFramework.Context<IInputs>): JSX.Elemen
 
     message = context.parameters.message.formatted ?? context.parameters.message.raw
 
-    return (message ?? '').replaceAll('-', '--').replaceAll('_', '__').replaceAll(' ', '_')
+    return encodeURIComponent(message ?? '').replaceAll('-', '--').replaceAll('_', '__').replaceAll(' ', '_')
   }
 
   const badgeurl = `https://img.shields.io/badge/${getlabel()}-${getMessage()}-${color}?style=${style}&labelColor=${labelcolor}&logo=${logo}&logoColor=${logocolor}`
