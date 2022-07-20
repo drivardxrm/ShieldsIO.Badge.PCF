@@ -2,8 +2,10 @@
     "extends": "./node_modules/pcf-scripts/tsconfig_base.json",
     "compilerOptions": {
         "typeRoots": ["node_modules/@types"],
-        "sourceMap": true,
+        // "sourceMap": true,
         "jsx": "react",
+        "module": "es2015",
+        "moduleResolution": "node",
         "lib": [
             // ... other libs
             "DOM",
